@@ -1,2 +1,3 @@
 # SciWebsite
-Science related website
+Author: Krishna Shankarreddy
+Science related website.
