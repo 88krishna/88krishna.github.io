@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mom Pillu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand " href="index.html">Play-Win / ಆಡಿ ಹಾಗು ಗೆಲ್ಲಿ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home / ಮನೆ<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              How to Play / ಹೇಗೆ ಆಡುವುದು
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item bg-warning " href="#">Press Mukku / ಮೂಗು ಒತ್ತಿರಿ</a>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container col text-center">
+
+  
+  <img src="pillu.jpg" alt="Pillu picture" usemap="#gamemap" width="394" height="403" class="rounded">
+  
+  <div id="celebration">
+      <h1 id="congratsmessage">Congrats you Won / ನೀವು ಗೆದ್ದ ಅಭಿನಂದನೆಗಳು!!!</h1>
+    </br>
+  <img src="excited_cat.gif" alt="Excited cat image width="200" height="200"">
+  <img src="celebration.gif" alt="Clebration image width="200" height="200"">
+  </br>
+  </br>
+   <button type="button" onclick="hideCelebrationContent()" class="btn btn-primary btn-lg btn-success font-weight-bold">OKAY / ಸರಿ!</button>
+  </div>
+<map name="gamemap">
+  <area id="clickaction" shape="circle" coords="145,275,30" alt="Pillu mukku" href="">
+</map>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $("#clickaction").on("click", function(e){
+      e.preventDefault();
+      document.getElementById('celebration').style = "display:block"
+      });
+
+      function hideCelebrationContent() {
+  document.getElementById("celebration").style = "display:hidden"
+}
+    </script>
+</body>
+
+</html>
