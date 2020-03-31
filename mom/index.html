@@ -1,88 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Mom Pillu</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <a class="navbar-brand " href="index.html">Play-Win / ಆಡಿ ಹಾಗು ಗೆಲ್ಲಿ</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <head>
+    <title>The Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <a class="navbar-brand " href="index.html">Play-Win / ಆಡಿ ಹಾಗು ಗೆಲ್ಲಿ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home / ಮನೆ<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            How to Play / ಹೇಗೆ ಆಡುವುದು
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item bg-warning " href="#">👉Press Mukku / ಮೂಗು ಒತ್ತಿರಿ</a>
-          </div>
-        </li>
-      </ul>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home / ಮನೆ<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              How to Play / ಹೇಗೆ ಆಡುವುದು
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item bg-warning " href="#">👉Press Mukku / ಮೂಗು ಒತ್ತಿರಿ</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <div class="container col text-center">
+      <div class="has-theme-border">
+        <h3>How to Play / ಹೇಗೆ ಆಡುವುದು🤔:</h3>
+        <h6>👉Press Mukku / ಮೂಗು ಒತ್ತಿರಿ</h6>
+      </div>
+      <br>
+      <div class="has-courtesy-border">
+        <h5>Courtesy🙏: Smt. Radha</h5>
+        <h5>ಧನ್ಯವಾದಗಳು🙏: ಶ್ರೀಮತಿ. ರಾಧ</h5>
+      </div>
+      <br>
+      <img src="img/pillu.jpg" alt="Pillu picture" usemap="#gamemap" width="394" height="403" class="rounded">
+      <map name="gamemap">
+        <area id="clickaction" shape="circle" coords="145,275,30" alt="Pillu mukku" href="">
+      </map>
+      <br>
+      <br>
+      <div id="celebration" class="has-theme-border">
+        <h1 id="congrats-message">Congrats you Won / ನೀವು ಗೆದ್ದ ಅಭಿನಂದನೆಗಳು😝😂!!!</h1>
+        <br>
+        <img src="img/excited_cat.gif" alt="Excited cat image" width="200" height="200">
+        <img src=" img/celebration.gif" alt="Clebration image" width="200" height="200">
+        <br>
+        <br>
+        <button type="button" onclick="hideCelebrationContent()"
+          class="btn btn-primary btn-lg btn-success font-weight-bold">
+        OKAY / ಸರಿ!
+        </button>
+      </div>
     </div>
-  </nav>
-
-  </br>
-
-  <div class="container col text-center">
-    <div class="hasthemeborder">
-      <h3>How to Play / ಹೇಗೆ ಆಡುವುದು🤔:</h3>
-      <h6>👉Press Mukku / ಮೂಗು ಒತ್ತಿರಿ</h6>
-    </div>
-
-    </br>
-
-    <div class="hascourtesyborder">
-      <h5>Courtesy🙏: Smt. Radha</h5>
-      <h5>ಧನ್ಯವಾದಗಳು🙏: ಶ್ರೀಮತಿ. ರಾಧ</h5>
-    </div>
-
-    <img src="img/pillu.jpg" alt="Pillu picture" usemap="#gamemap" width="394" height="403" class="rounded">
-
-    </br>
-    </br>
-
-    <div id="celebration" class="hasthemeborder">
-      <h1 id="congratsmessage">Congrats you Won / ನೀವು ಗೆದ್ದ ಅಭಿನಂದನೆಗಳು😝😂!!!</h1>
-
-      </br>
-
-      <img src="img/excited_cat.gif" alt="Excited cat image width=" 200" height="200"">
-      <img src="img/celebration.gif" alt="Clebration image width=" 200" height="200"">
-
-      </br>
-      </br>
-
-      <button type=" button" onclick="hideCelebrationContent()"
-       class="btn btn-primary btn-lg btn-success font-weight-bold">OKAY / ಸರಿ!</button>
-    </div>
-    <map name="gamemap">
-      <area id="clickaction" shape="circle" coords="145,275,30" alt="Pillu mukku" href="">
-    </map>
-  </div>
-
-  <footer class="border-top border-primary m-1">
-    <p>&copy; Copyright 2020 (Krishna S)</p>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="js/myscripts.js"></script>
-
-</body>
-
+    <footer class="border-top border-primary m-1">
+      <p>&copy; Copyright 2020 (Krishna S)</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="js/myscripts.js"></script>
+  </body>
 </html>

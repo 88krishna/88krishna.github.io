@@ -1,19 +1,19 @@
-#congratsmessage {
+#congrats-message {
     color: blue;
-}
+  }
 
-#celebration {
+  #celebration {
     display: none;
-}
+  }
 
-.hasthemeborder {
-  border-style: solid;
-  border-width: 4px;
-  border-color: red;
-}
+  .has-theme-border {
+    border-style: solid;
+    border-width: 4px;
+    border-color: red;
+  }
 
-.hascourtesyborder {
+  .has-courtesy-border {
     border-style: solid;
     border-width: 4px;
     border-color: green;
-}
+  }
